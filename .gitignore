@@ -1,0 +1,13 @@
+# Lingkungan virtual & cache Python
+.venv/
+__pycache__/
+*.py[cod]
+catboost_info/
+
+# Berkas NetCDF mentah CSIC berukuran besar (>100 MB)
+*.nc
+
+# Berkas sementara & sistem operasi
+_sampah_sementara/
+.DS_Store
+Thumbs.db

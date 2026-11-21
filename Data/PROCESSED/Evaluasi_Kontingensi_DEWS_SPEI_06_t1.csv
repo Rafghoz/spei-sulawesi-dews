@@ -1,0 +1,43 @@
+Model,Aturan_Pemicu,TP_Hit,FP_FalseAlarm,FN_Miss,TN_CorrectNeg,POD_HitRate (%),FAR_FalseAlarmRatio (%),POFD_FalseDetRate (%),CSI_ThreatScore (%),F1_Score (%)
+B0_Climatology,1_Prob_Watch_Alert (P >= 30%),8,38,3,19,72.73,82.61,66.67,16.33,28.07
+B0_Climatology,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),0,0,11,57,0.0,0.0,0.0,0.0,0.0
+B0_Climatology,3_Prob_Strict_Alert (P >= 60%),0,0,11,57,0.0,0.0,0.0,0.0,0.0
+B1_Persistence,1_Prob_Watch_Alert (P >= 30%),9,8,2,49,81.82,47.06,14.04,47.37,64.29
+B1_Persistence,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+B1_Persistence,3_Prob_Strict_Alert (P >= 60%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+B2_AR(2),1_Prob_Watch_Alert (P >= 30%),9,7,2,50,81.82,43.75,12.28,50.0,66.67
+B2_AR(2),2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+B2_AR(2),3_Prob_Strict_Alert (P >= 60%),4,3,7,54,36.36,42.86,5.26,28.57,44.44
+B3_SARIMA,1_Prob_Watch_Alert (P >= 30%),8,7,3,50,72.73,46.67,12.28,44.44,61.54
+B3_SARIMA,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),7,3,4,54,63.64,30.0,5.26,50.0,66.67
+B3_SARIMA,3_Prob_Strict_Alert (P >= 60%),2,3,9,54,18.18,60.0,5.26,14.29,25.0
+Ridge_Direct,1_Prob_Watch_Alert (P >= 30%),8,7,3,50,72.73,46.67,12.28,44.44,61.54
+Ridge_Direct,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),6,5,5,52,54.55,45.45,8.77,37.5,54.55
+Ridge_Direct,3_Prob_Strict_Alert (P >= 60%),3,3,8,54,27.27,50.0,5.26,21.43,35.29
+Ridge_Delta,1_Prob_Watch_Alert (P >= 30%),9,6,2,51,81.82,40.0,10.53,52.94,69.23
+Ridge_Delta,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,3,3,54,72.73,27.27,5.26,57.14,72.73
+Ridge_Delta,3_Prob_Strict_Alert (P >= 60%),5,3,6,54,45.45,37.5,5.26,35.71,52.63
+MLP_Direct,1_Prob_Watch_Alert (P >= 30%),9,8,2,49,81.82,47.06,14.04,47.37,64.29
+MLP_Direct,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),9,5,2,52,81.82,35.71,8.77,56.25,72.0
+MLP_Direct,3_Prob_Strict_Alert (P >= 60%),7,3,4,54,63.64,30.0,5.26,50.0,66.67
+MLP_Delta,1_Prob_Watch_Alert (P >= 30%),10,8,1,49,90.91,44.44,14.04,52.63,68.97
+MLP_Delta,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),9,6,2,51,81.82,40.0,10.53,52.94,69.23
+MLP_Delta,3_Prob_Strict_Alert (P >= 60%),8,5,3,52,72.73,38.46,8.77,50.0,66.67
+RF_Direct,1_Prob_Watch_Alert (P >= 30%),8,6,3,51,72.73,42.86,10.53,47.06,64.0
+RF_Direct,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+RF_Direct,3_Prob_Strict_Alert (P >= 60%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+RF_Delta,1_Prob_Watch_Alert (P >= 30%),10,6,1,51,90.91,37.5,10.53,58.82,74.07
+RF_Delta,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),9,6,2,51,81.82,40.0,10.53,52.94,69.23
+RF_Delta,3_Prob_Strict_Alert (P >= 60%),4,4,7,53,36.36,50.0,7.02,26.67,42.11
+XGB_Direct,1_Prob_Watch_Alert (P >= 30%),8,7,3,50,72.73,46.67,12.28,44.44,61.54
+XGB_Direct,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+XGB_Direct,3_Prob_Strict_Alert (P >= 60%),8,4,3,53,72.73,33.33,7.02,53.33,69.57
+XGB_Delta,1_Prob_Watch_Alert (P >= 30%),10,6,1,51,90.91,37.5,10.53,58.82,74.07
+XGB_Delta,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),9,5,2,52,81.82,35.71,8.77,56.25,72.0
+XGB_Delta,3_Prob_Strict_Alert (P >= 60%),5,4,6,53,45.45,44.44,7.02,33.33,50.0
+Cat_Direct,1_Prob_Watch_Alert (P >= 30%),9,6,2,51,81.82,40.0,10.53,52.94,69.23
+Cat_Direct,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),8,5,3,52,72.73,38.46,8.77,50.0,66.67
+Cat_Direct,3_Prob_Strict_Alert (P >= 60%),6,3,5,54,54.55,33.33,5.26,42.86,60.0
+Cat_Delta,1_Prob_Watch_Alert (P >= 30%),10,6,1,51,90.91,37.5,10.53,58.82,74.07
+Cat_Delta,2_Prob_Point_50 (y_hat <= -1.0 / P >= 50%),9,5,2,52,81.82,35.71,8.77,56.25,72.0
+Cat_Delta,3_Prob_Strict_Alert (P >= 60%),5,4,6,53,45.45,44.44,7.02,33.33,50.0
